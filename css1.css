@@ -7,4 +7,5 @@ img {
 	}
 em {
 	font-size: 18px;
+	transition: color 10s;
 }
