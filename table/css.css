@@ -1,0 +1,42 @@
+table {
+    border: 1px solid #BABABA;
+    border-collapse: collapse;
+    font: 17px helvetica;
+    color: #303030;
+}
+
+td {
+    border: 1px solid #BABABA;
+    padding: 10px;
+}
+
+th {
+    border: 1px solid #BABABA;
+    padding: 10px;
+    text-align: left;
+    background-color: #D4D4D4;
+}
+
+caption {
+	caption-side: top;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font: 25px helvetica;
+}
+
+.ordinary-row {
+	width: 1px;
+}
+
+.red {
+	background-color: #F9B3B3;
+}
+
+.yellow {
+	background-color: #F9F8B3;
+}
+
+.green {
+	background-color: lightgreen;
+}
