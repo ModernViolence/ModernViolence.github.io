@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+	<title>Форма и всякие инпуты</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<a href="../index.html">Оглавление</a>
+	<!-- как-то не отсылать на сервер, а отображать на месте, что отправляется, а пока смотреть в фиддлере -->
+	<!-- ну или отправлять самому себе -->
+	<h1>Итак, вы чем-то недовольны</h1>
+	<form action="form.html#input-submit" method="post">
+	<label>
+	Что случилось?<br>
+		<select name="feedback-scripted" multiple size="5">
+			<option value="От белого фона болят глаза">От белого фона болят глаза</option>
+			<option value="На мобилках смотрится все плохо, ужасная адаптивность">На мобилках смотрится все плохо, ужасная адаптивность</option>
+			<option value="Нужно больше картинок">Нужно больше картинок</option>
+			<option value="У меня просто черная полоса в жизни, нужно кому-то пожаловаться">У меня просто черная полоса в жизни, нужно кому-то пожаловаться</option>
+			<option value="У меня своя жалоба, опишу ниже" checked>У меня своя жалоба, опишу ниже</option>
+		</select><br>
+	</label><br>
+	<label>Свою жалобу я опишу ниже<br>
+		<textarea name="feedback-custom" cols="40" rows="25" id="textarea-feedback"></textarea>
+	</label>
+	<br><br>
+	<label>
+		Оцените ваше негодование по шкале от 1 до 5
+		<label>
+			<br><input type="radio" name="anger-level" value='1' checked>1
+		</label>
+		<label>
+			<br><input type="radio" name="anger-level" value='2'>2
+		</label>
+		<label>
+			<br><input type="radio" name="anger-level" value='3'>3
+		</label>
+		<label>
+			<br><input type="radio" name="anger-level" value='4'>4
+		</label>
+		<label>
+			<br><input type="radio" name="anger-level" value='5'>5
+		</label>
+		<label>
+			<!-- так надо -->
+			<br><input type="radio" name="anger-level" value='5'>99
+		</label>
+	</label><br><br>
+	<label>
+		<input type="text" name="email" id="input-email">
+		Электронная почта
+	</label><br><br>
+	<label>
+		<input type="text" name="phone" id="input-phone">
+		Телефон
+	</label><br><br>
+	<label>
+		<input type="checkbox" name="gonna-complain-in-court" id="complain-checkbox" checked>
+		Я подам на вас в суд!
+	</label>
+	<input type="submit" name="submit-feedback" value="Поделиться с нами" id="input-submit">
+
+	<input type="hidden" name="hidden-input" value="Все равно это никто не прочитает">
+	</form>
+</body>
