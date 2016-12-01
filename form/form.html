@@ -8,7 +8,7 @@
 	<!-- как-то не отсылать на сервер, а отображать на месте, что отправляется, а пока смотреть в фиддлере -->
 	<!-- ну или отправлять самому себе -->
 	<h1>Итак, вы чем-то недовольны</h1>
-	<form action="form.html#input-submit" method="post">
+	<form action="../index.html" method="post">
 	<label>
 	Что случилось?<br>
 		<select name="feedback-scripted" multiple size="5">
@@ -57,7 +57,7 @@
 		<input type="checkbox" name="gonna-complain-in-court" id="complain-checkbox" checked>
 		Я подам на вас в суд!
 	</label>
-	<input type="submit" name="submit-feedback" value="Поделиться с нами" id="input-submit">
+	<input type="submit" src="../index.html" name="submit-feedback" value="Поделиться с нами" id="input-submit">
 
 	<input type="hidden" name="hidden-input" value="Все равно это никто не прочитает">
 	</form>
